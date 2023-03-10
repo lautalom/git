@@ -263,7 +263,7 @@ function git_count_all() {
 function git_list_aliases() {
   # if ZSH_CUSTOM is not set, use the default location:
   if [[ -z $ZSH_CUSTOM ]]; then
-    ZSH_CUSTOM=~/.oh-my-zsh/custom
+    ZSH_CUSTOM=${ZSH}/custom
   fi
   filename=${ZSH_CUSTOM}/plugins/git/README.md
   from=$(grep -Fno '| **g** ' ${filename} | cut -f1 -d:)
