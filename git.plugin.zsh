@@ -138,6 +138,7 @@ alias glsst='git stash list'
 alias glst='git tag --list'
 
 alias gm='git merge'
+alias gmnff='git merge --no-ff'
 # Try to merge origin/main into the currently active branch:
 alias gmom='git merge origin/$(git_main_branch)'
 # Try to merge upstream/main into the currently active branch:

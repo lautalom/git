@@ -432,6 +432,10 @@ function gm {
   git merge @args
 }
 
+function gmnff {
+  git merge --no-ff @args
+}
+
 # Try to merge origin/main into the currently active branch:
 function gmom {
   git merge "origin/$(git_main_branch)"
