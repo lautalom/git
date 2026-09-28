@@ -20,6 +20,34 @@ On top of that, quite a few extra functions are added.
 
 
 ## Installation
+
+### One-command install (bash, zsh or nushell)
+
+Works on Arch-based, Hyprland-flavoured distros such as **Omarchy** and
+**CachyOS**, and anywhere else with bash, zsh or nushell:
+
+```
+curl -fsSL https://raw.githubusercontent.com/lautalom/git/master/install.sh | bash
+```
+
+The script auto-detects your shell, appends a managed block to your rc file,
+and supports `--shell bash|zsh|nu|all` plus `--uninstall`. See
+[install.sh](./install.sh) for details.
+
+### bash (Omarchy / CachyOS default)
+
+Omarchy and CachyOS keep bash as the login shell on purpose — switching it can
+break the boot chain. Use the **bash port** instead:
+
+```
+./install.sh --shell bash
+```
+
+See [README-bash.md](./README-bash.md) for details and the differences from the
+zsh plugin.
+
+### oh-my-zsh
+
 To use this plugin, clone this repo to `~/.oh-my-zsh/custom/plugins`:
 ```
 git clone https://github.com/davidde/git.git ~/.oh-my-zsh/custom/plugins/git
