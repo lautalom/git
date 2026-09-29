@@ -1,4 +1,4 @@
-# oh-my-zsh git plugin
+# Custom git plugin
 This plugin is a complete replacement for the default oh-my-zsh git plugin,
 and provides quite a few useful aliases and functions.
 The motivation to replace the default plugin stems from the fact
